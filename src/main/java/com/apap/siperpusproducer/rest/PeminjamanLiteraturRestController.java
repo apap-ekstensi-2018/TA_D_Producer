@@ -57,14 +57,11 @@ public class PeminjamanLiteraturRestController {
 				message = username + " tidak memilki literatur yang belum dikembalikan. ";
 			}
 			
-//			response.put("status", String.valueOf(200));
-//			response.put("message", message);
-//			response.put("jumlah_literatur_overdue", String.valueOf(countLiteratur));
-//			response.put("username", username);
-			
-			response.put("status", String.valueOf(500));
-			response.put("message", "Internal Server Error");
+			response.put("status", String.valueOf(200));
+			response.put("message", message);
+			response.put("jumlah_literatur_overdue", String.valueOf(countLiteratur));
 			response.put("username", username);
+			
 		} catch (Exception e) {
 			log.error("PeminjamanLiteraturRestController, checkOverduePeminjamanByUsername, username " 
 					+ username
