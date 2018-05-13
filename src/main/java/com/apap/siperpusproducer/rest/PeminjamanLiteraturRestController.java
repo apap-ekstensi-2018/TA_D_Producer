@@ -61,7 +61,6 @@ public class PeminjamanLiteraturRestController {
 			response.put("message", message);
 			response.put("jumlah_literatur_overdue", String.valueOf(countLiteratur));
 			response.put("username", username);
-			
 		} catch (Exception e) {
 			log.error("PeminjamanLiteraturRestController, checkOverduePeminjamanByUsername, username " 
 					+ username
